@@ -1,0 +1,33 @@
+import tkinter as tr
+from tkinter import ttk
+import customtkinter as ctk
+from tkinter import messagebox as mb
+
+def event_homepage():
+    window = ctk.CTk()
+    window.title('Event Homepage')
+    window.geometry('1000x600')
+    window.configure(fg_color='#213354', bg_color='#213354')
+
+    # Sponsor Advertisements (Rectangular Labels)
+    sponsor_lbl1 = ctk.CTkLabel(window, bg_color='#FFFFFF', width=200,height=320)
+    sponsor_lbl1.place(x=50, y=50)
+
+    sponsor_lbl2 = ctk.CTkLabel(window, bg_color='#FFFFFF', width=200,height=320)
+    sponsor_lbl2.place(x=300, y=50)
+
+    sponsor_lbl3 = ctk.CTkLabel(window, bg_color='#FFFFFF', width=200,height=320)
+    sponsor_lbl3.place(x=550, y=50)
+
+    # Event Name Button
+    event_btn = ctk.CTkButton(window, text='Event Name', font=("Helvetica", 24), fg_color='#1E90FF', bg_color='#037476')
+    event_btn.place(x=200, y=420)
+
+    # Tent Symbol
+    tent_symbol = ctk.CTkLabel(window, text='🛈', font=("Arial", 36), fg_color='#213354', bg_color='#213354')
+    tent_symbol.place(x=380, y=410)
+
+    window.mainloop()
+
+if __name__ == "__main__":
+    event_homepage()
